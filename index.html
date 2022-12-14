@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Electronics Shopping</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+
+        }
+
+        #first{
+            background-color: #F44336;
+            padding: 20px 10px 20px 10px;
+        }
+
+        #first p{
+            color: white;
+            text-align: right;
+        }
+
+        
+
+        #first>div{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        #first img{
+            width: 200px;
+            height: 50px;
+        }
+
+        #first input{
+            width: 500px;
+            height: 40px;
+            border-radius: 20px;
+            border: none;
+            padding: 0px 10px 0px 10px;
+        }
+
+        #second>ul{
+            width: 100%;
+            display: flex;
+            background-color: #303F9F;
+            justify-content: space-around;
+        }
+
+        #second>ul ul{
+            display: none;
+        }
+
+        #second>ul li{
+            list-style: none;
+        }
+
+        #second a{
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 15px;
+        }
+
+        #second a:hover{
+            background-color: #F44336;
+        }
+
+        #mid-section{
+            width:95%;
+            margin: auto;
+        }
+
+        #deals_grid{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 20px;
+
+        }
+
+        #deals_grid img,#banner img{
+            width: 100%;
+        }
+
+        #footer{
+            background-color: #303F9F;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 20px;
+        }
+
+        #footer>div{
+
+            display: flex;
+            flex-direction: column;
+        }
+
+        #footer h3,#footer a{
+            color: white;
+            text-decoration: none;
+        }
+
+        #footer>div:last-child{
+            grid-column-start: 2;
+            grid-column-end: 4;
+        }
+
+        #footer img{
+            width: 25%;
+        }
+    </style>
+</head>
+<body>
+    <!-- first navigation bar with logo search bar -->
+    <nav id="first">
+        <p>Find a store | Buying guides | Contact us</p>
+        <div>
+            <img src="/images/BinaryKart LOGO colored.png" alt="">
+            <input type="text" placeholder="Find your favourite products">
+            <p>Select your PIN Code | <a href="">Cart</a> | <a href="">Login</a></p>
+        </div>
+
+    </nav>
+
+    <!-- second navigation bar with dropdown menu-->
+
+    <nav id="second">
+        <ul>
+
+        <li><a href="#">MOBILES & TABLETS</a>
+            <ul>
+                <li><a href="#">Smartphones</a></li>
+                <li><a href="#">Headphones & Headsets</a></li>
+                <li><a href="#">Wearable technology</a></li>
+                <li><a href="#">Accessories</a></li>
+                <li><a href="#">Powerbanks</a></li>
+            </ul>
+        </li>
+        <li><a href="#">TELEVISIONS</a></li>
+        <li><a href="#">AUDIO</a></li>
+        <li><a href="#">HOME APPLIANCES</a></li>
+        <li><a href="#">COMPUTERS</a></li>
+        <li><a href="#">CAMERAS</a></li>
+        <li><a href="#">KITCHEN APPLIANCES</a></li>
+        <li><a href="#">PERSONAL CARE</a></li>
+        <li><a href="#">ACCESSORIES</a></li>
+
+       </ul>
+    </nav>
+
+    <!-- top section banner -->
+
+    <div id="banner">
+        <img src="https://www.reliancedigital.in/medias/Year-End-Sale-5000-Instant-Discount-Carousel-Banner-05-12-2022.jpg?context=bWFzdGVyfGltYWdlc3wxNDcwODh8aW1hZ2UvanBlZ3xpbWFnZXMvaDkzL2hiNS85OTI4MTY1NTg5MDIyLmpwZ3w4NDk3ZDFhZTM1YzUxYTg3MDFiMWZkZjhmMGE0ZWI2ZWZmYjU0MWNmOGJkMTAzZTYwMTdlNjI5MGNjYzZiOTIx" alt="">
+    </div>
+
+    <!-- top section offers carousel -->
+
+    <!-- mid section deals grid -->
+    <div id="mid-section">
+    <h1>
+        GREAT DEALS ON ELECTRONICS
+    </h1>
+
+    <div id="deals_grid">
+        <div><img src="https://www.reliancedigital.in/medias/43-inch-UHD-TV-Small-Banner-05-12-2022.jpg?context=bWFzdGVyfGltYWdlc3w2MTc5NXxpbWFnZS9qcGVnfGltYWdlcy9oZDcvaGM2Lzk5MjgxNjcyNjAxOTAuanBnfDg4MjdjN2IwZWViMTNlNmM2ODdiOWZjNzU2M2RkZmVlZTMxMmM4ODRlZWQ3MWNhMWIwYWI3NmNhMDcxNjkxY2M" alt=""></div>
+        <div><img src="https://www.reliancedigital.in/medias/Headphones-and-Earphones-Entertainment-Fest-Small-Banner-02-12-2022.jpg?context=bWFzdGVyfGltYWdlc3w0MDQzNHxpbWFnZS9qcGVnfGltYWdlcy9oYTAvaDU0Lzk5MjY3ODEzMzc2MzAuanBnfGI1Y2Q4MDExYTAwOGEzYzhlNWQxOTI0MzU2ZWIyY2YyYWQ5NDE1M2EwYzNmMTNjNjA4MGZiMTU2Y2VlZGNlZDQ" alt=""></div>
+        <div><img src="https://www.reliancedigital.in/medias/OnePlus-Smart-TV-Small-Banner-13-12-2022.jpg?context=bWFzdGVyfGltYWdlc3w1NjMwMXxpbWFnZS9qcGVnfGltYWdlcy9oYmYvaDk5Lzk5MzExODY3MDAzMTguanBnfDAxYmI1YmI5OGE3NzIxNmY3MTMxODBiZTEyYmQ4N2RmOGM4OWE3ZmM1NzFiYWIzYjNjYmE0YmFmZDhlYWZhNDQ" alt=""></div>
+        <div><img src="https://www.reliancedigital.in/medias/Soundbars-Entertainment-Fest-Small-Banner-02-12-2022.jpg?context=bWFzdGVyfGltYWdlc3wzMTg3NHxpbWFnZS9qcGVnfGltYWdlcy9oMzYvaGQ1Lzk5MjY3ODE0MDMxNjYuanBnfDY5ODQ2ZDU3NDFlMjgxYTY2YTViZmQ1ZTA4Y2U5ZTMwYjVlNjYzNTk3YzJjNzkyMDUwY2VkY2ZlZTViODQ1NjQ" alt=""></div>
+        <div><img src="https://www.reliancedigital.in/medias/Smartwatches-Small-Banners-01.jpg?context=bWFzdGVyfGltYWdlc3w0NDA0MnxpbWFnZS9qcGVnfGltYWdlcy9oNTAvaGRiLzk5MjgzNzA5MTMzMTAuanBnfGYwOWU2ZjQ3Y2Y0OWI2NmVhZGVkYWM2M2ZiMzQ4YTlhODRkZDY4ODZmODA1OGQyZWNiYWVhODNmNWM2YWMwMmY" alt=""></div>
+        <div><img src="https://www.reliancedigital.in/medias/Realme-Smart-TV-Great-Deals-Banner-13-12-2022.jpg?context=bWFzdGVyfGltYWdlc3w3NzY3MHxpbWFnZS9qcGVnfGltYWdlcy9oNzUvaDg2Lzk5MzExODY3NjU4NTQuanBnfDA5YzNlMTkwNmM0ZWI3ZGJlYjI5Y2E0ZmQ5M2M5YjNkZmZjZmVlMjBmOGU1ZGIwNDY3NjFhNTcwMWM4ZmFlOWI" alt=""></div>
+        <div><img src="https://www.reliancedigital.in/medias/Printers-Small-Banners-01-1-.jpg?context=bWFzdGVyfGltYWdlc3w0MDAwNHxpbWFnZS9qcGVnfGltYWdlcy9oNGYvaGQxLzk5Mjg3MzAzNDU1MDIuanBnfGMyNTg3NWQyZWRmMGU2M2EzZmEwM2U2MWNlMTA3ZWQzYjk4MmRhM2EzYjY0N2FiZGM4OGFlYWQ2NjBlZjE4YWE" alt=""></div>
+        <div><img src="https://www.reliancedigital.in/medias/Washing-Machines-Small-Banners.jpg?context=bWFzdGVyfGltYWdlc3w0NDcwMHxpbWFnZS9qcGVnfGltYWdlcy9oNWIvaDUwLzk5MTM3Nzc3MTcyNzguanBnfGMyNWJhNDNiMTFkMjE4YmQ2OGRiMzdkMGIxNmZmZDhiYzViMTBjY2I1ZDllYzAyMWFjN2FlZTU1ZGVmMDk4MmU" alt=""></div>
+        <div><img src="https://www.reliancedigital.in/medias/Smart-Home-Products-Great-Deals-Banner-22-11-2022.jpg?context=bWFzdGVyfGltYWdlc3wzOTAxM3xpbWFnZS9qcGVnfGltYWdlcy9oMDYvaDMxLzk5MzExOTE5NDMxOTguanBnfDhiY2ZkOWE5YmQ3OWFkYmM2OWUwNjIwODQ4NGFkMWI4MDExZGQ5ZTIyNzkyMmZiMDM2ZDcyYjRkM2M4NmQ0MTA" alt=""></div>
+        <div><img src="https://www.reliancedigital.in/medias/True-Wireless-Small-Banners.jpg?context=bWFzdGVyfGltYWdlc3w0NjcyOXxpbWFnZS9qcGVnfGltYWdlcy9oODAvaDljLzk5MTM3NzcyNTg1MjYuanBnfGY3MDIxZDZlYTBhMjEwYjQ4NGIzMmQwZjdjMzQ2M2FhYzIwYWE0NGE4MzFmYjRlZjQwNzFlZjk2NWMwMzYxN2Y" alt=""></div>
+        <div><img src="https://www.reliancedigital.in/medias/Samsung-M13-5G-Great-Deals-Banner-22-11-2022.jpg?context=bWFzdGVyfGltYWdlc3wzNDUzN3xpbWFnZS9qcGVnfGltYWdlcy9oNDgvaGY3Lzk5MjM5MDIzNDExNTAuanBnfDdiZjliNDZlOWUxZDFjZDQ2MDkzYjdjZDZhNDVlNWI0MGYwNTAwOWJkOWM4MWUzMTUyYmNmZmRmZjk3NjIwYjk" alt=""></div>
+        <div><img src="https://www.reliancedigital.in/medias/MackBook-Appliances-Small-banners.jpg?context=bWFzdGVyfGltYWdlc3w0Mjc0NXxpbWFnZS9qcGVnfGltYWdlcy9oNTYvaDkyLzk5MTkwODgzMjg3MzQuanBnfDcxYmMyMDMxMjdiMzUxYzE2NmJkYTU4ZDBlNTQxNjBkZWViYjQ1Mzc2Y2IyOWYwNTllODhkNmRlZjA0NjM3NmI" alt=""></div>
+    </div>
+
+    </div>
+
+    <div id="footer">
+        <div>
+            <h3>PRODUCT CATEGORIES</h3>
+            <a href="">Smartphones</a>
+            <a href="">Laptops</a>
+            <a href="">DSLR Cameras</a>
+            <a href="">Televisions</a>
+            <a href="">Airconditioners</a>
+            <a href="">Refrigerators</a>
+            <a href="">Kitchen Appliances</a>
+            <a href="">Accessories</a>
+            <a href="">Personal Care & Grooming</a>
+        </div>
+
+        <div>
+            <h3>SITE INFO</h3>
+            <a href="">About</a>
+            <a href="">resQ Services</a>
+            <a href="">Site Map</a>
+            <a href="">Gift Cards</a>
+            <a href="">Corporate Enquiries</a>
+            <a href="">Contact Us</a>
+        </div>
+
+        <div>
+            <h3>RESOURCE CENTRE</h3>
+            <a href="">Product Reviews</a>
+            <a href="">Buying Guides</a>
+            <a href="">How Tos</a>
+            <a href="">Featured Stories</a>
+            <a href="">Events & Happenings</a>
+        </div>
+
+        <div>
+            <h3>POLICIES</h3>
+            <a href="">Terms of Use</a>
+            <a href="">FAQs</a>
+            <a href="">Cancellation and Return Policy</a>
+            <a href="">Pricing and Payments Policy</a>
+            <a href="">Shipping and Delivery Policy</a>
+            <a href="">Privacy Policy</a>
+            <a href="">E-waste recycling Policy</a>
+            <a href="">EMI and Additional Cashback T&C</a>
+            <a href="">Loyalty Program T&C</a>
+            <a href="">Caution Notice</a>
+        </div>
+
+        <div>
+            <h3>FOLLOW US</h3>
+            <a href="">Facebook</a>
+            <a href="">Twitter</a>
+            <a href="">Youtube</a> 
+        </div>
+
+        <div>
+            <h3>EXPERIENCE BINARY KART ON MOBILE</h3>
+            <div>
+            <img src="https://www.reliancedigital.in/build/client/images/google_play_store.png" alt="">
+            <img src="https://www.reliancedigital.in/build/client/images/ios_app_store_icon.png" alt="">
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
