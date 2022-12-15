@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smartphones</title>
+    <link rel="stylesheet" href="smartphones.css">
+</head>
+<body>
+        <!-- first navigation bar with logo search bar -->
+        <nav id="first">
+            <p>Find a store | Buying guides | Contact us</p>
+            <div>
+                <a href="./index.html"><img src="/images/BinaryKart LOGO colored.png" alt=""></a>
+                <input type="text" placeholder="Find your favourite products">
+                <p>Select your PIN Code | <a href="">Cart</a> | <a href="">Login</a></p>
+            </div>
+    
+        </nav>
+    
+        <!-- second navigation bar with dropdown menu-->
+    
+        <nav id="second">
+            <ul>
+    
+            <li><a href="#">MOBILES & TABLETS</a>
+                <ul>
+                    <li><a href="#">Smartphones</a></li>
+                    <li><a href="#">Headphones & Headsets</a></li>
+                    <li><a href="#">Wearable technology</a></li>
+                    <li><a href="#">Accessories</a></li>
+                    <li><a href="#">Powerbanks</a></li>
+                </ul>
+            </li>
+            <li><a href="#">TELEVISIONS</a></li>
+            <li><a href="#">AUDIO</a></li>
+            <li><a href="#">HOME APPLIANCES</a></li>
+            <li><a href="#">COMPUTERS</a></li>
+            <li><a href="#">CAMERAS</a></li>
+            <li><a href="#">KITCHEN APPLIANCES</a></li>
+            <li><a href="#">PERSONAL CARE</a></li>
+            <li><a href="#">ACCESSORIES</a></li>
+    
+           </ul>
+        </nav>
+
+        <div id="filterSort">
+
+        <select name="" id="filter">
+            <option value="default" id="defaultFilter">Filter by Brand</option>
+            <option value="Apple">Apple</option>
+            <option value="Oneplus">Oneplus</option>
+            <option value="Oppo">Oppo</option>
+            <option value="Realme">Realme</option>
+            <option value="Samsung">Samsung</option>
+            <option value="Vivo">Vivo</option>
+        </select>
+
+        <select name="" id="sort">
+            <option value="default" id="defaultSort">Sort by Price</option>
+            <option value="low">Low to High</option>
+            <option value="high">High to Low</option>
+        </select>
+
+        </div>
+
+        <div id="phones-container"></div>
+    
+    
+</body>
+<script src="smartphones.js"></script>
+</html>
