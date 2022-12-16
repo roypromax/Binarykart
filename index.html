@@ -5,115 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Online Electronics Shopping</title>
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-            font-family: sans-serif;
-
-        }
-
-        #first{
-            background-color: #F44336;
-            padding: 20px 10px 20px 10px;
-        }
-
-        #first p{
-            color: white;
-            text-align: right;
-        }
-
-        
-
-        #first>div{
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-        }
-
-        #first img{
-            width: 200px;
-            height: 50px;
-        }
-
-        #first input{
-            width: 500px;
-            height: 40px;
-            border-radius: 20px;
-            border: none;
-            padding: 0px 10px 0px 10px;
-        }
-
-        #second>ul{
-            width: 100%;
-            display: flex;
-            background-color: #303F9F;
-            justify-content: space-around;
-        }
-
-        #second>ul ul{
-            display: none;
-        }
-
-        #second>ul li{
-            list-style: none;
-        }
-
-        #second a{
-            display: block;
-            color: white;
-            text-decoration: none;
-            padding: 15px;
-        }
-
-        #second a:hover{
-            background-color: #F44336;
-        }
-
-        #mid-section{
-            width:95%;
-            margin: auto;
-        }
-
-        #deals_grid{
-            display: grid;
-            grid-template-columns: repeat(4,1fr);
-            gap: 20px;
-
-        }
-
-        #deals_grid img,#banner img{
-            width: 100%;
-        }
-
-        #footer{
-            background-color: #303F9F;
-            padding: 20px;
-            display: grid;
-            grid-template-columns: repeat(4,1fr);
-            gap: 20px;
-        }
-
-        #footer>div{
-
-            display: flex;
-            flex-direction: column;
-        }
-
-        #footer h3,#footer a{
-            color: white;
-            text-decoration: none;
-        }
-
-        #footer>div:last-child{
-            grid-column-start: 2;
-            grid-column-end: 4;
-        }
-
-        #footer img{
-            width: 25%;
-        }
-    </style>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <!-- first navigation bar with logo search bar -->
@@ -122,7 +14,7 @@
         <div>
             <a href="./index.html"><img src="/images/BinaryKart LOGO colored.png" alt=""></a>
             <input type="text" placeholder="Find your favourite products">
-            <p>Select your PIN Code | <a href="">Cart</a> | <a href="">Login</a></p>
+            <p>Select your PIN Code | <a href="cart.html">Cart</a> | <a href="">Login</a></p>
         </div>
 
     </nav>
