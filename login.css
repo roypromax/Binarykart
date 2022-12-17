@@ -62,24 +62,12 @@
     background-color: #F44336;
 }
 
-#main{
-    display: flex;
+#login>input{
+    display: block;
+
 }
 
-#cart-container{
-    /* border: 1px solid red; */
-    /* width: 90%; */
-    /* margin: auto; */
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    gap: 20px;
-}
-
-#cart-container>div{
-    /* border: 1px solid black; */
-    padding: 10px;
-}
-
-#cart-container img{
-    max-width: 100%;
+#login{
+    width: 15%;
+    margin: auto;
 }
