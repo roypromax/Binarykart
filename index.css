@@ -36,6 +36,11 @@
     padding: 0px 10px 0px 10px;
 }
 
+#first a{
+    color: white;
+    text-decoration: none;
+}
+
 #second>ul{
     width: 100%;
     display: flex;

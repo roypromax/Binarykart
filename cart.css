@@ -36,6 +36,11 @@
     padding: 0px 10px 0px 10px;
 }
 
+#first a{
+    color: white;
+    text-decoration: none;
+}
+
 #second>ul{
     width: 100%;
     display: flex;
@@ -63,23 +68,103 @@
 }
 
 #main{
+    width: 90%;
+    margin: auto;
     display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    justify-content: space-between;
 }
 
 #cart-container{
     /* border: 1px solid red; */
-    /* width: 90%; */
+    width: 70%;
     /* margin: auto; */
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(3,1fr);
     gap: 20px;
 }
 
 #cart-container>div{
     /* border: 1px solid black; */
     padding: 10px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 
 #cart-container img{
     max-width: 100%;
+}
+
+#cart-container p{
+    margin: 10px 0px 10px 0px;
+}
+
+#cart-container button{
+    margin: 5px;
+    padding: 10px;
+    font-weight: bolder;
+}
+
+#cart-container button:last-child{
+    border: none;
+    border-radius: 2px;
+    color:white;
+    background-color: #F44336;
+}
+
+#cart-container button:last-child:hover{
+    background-color: #303F9F;
+}
+
+#summary-container{
+    display : flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    height: 350px;
+}
+
+#buy{
+    display: block;
+    margin: auto;
+    padding: 10px;
+    font-weight:bolder;
+    font-size: xx-large;
+    border: none;
+    border-radius: 2px;
+    color:white;
+    background-color: #F44336;
+}
+
+#buy:hover{
+    background-color: #303F9F;
+}
+
+#footer{
+    background-color: #303F9F;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+}
+
+#footer>div{
+
+    display: flex;
+    flex-direction: column;
+}
+
+#footer h3,#footer a{
+    color: white;
+    text-decoration: none;
+}
+
+#footer>div:last-child{
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+#footer img{
+    width: 25%;
 }

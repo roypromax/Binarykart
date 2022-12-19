@@ -1,4 +1,19 @@
 
+let loginLink = document.getElementById("loginLink");
+
+let login = JSON.parse(localStorage.getItem("status"));
+
+if(login == true){
+    loginLink.innerText = "Logout";
+
+    loginLink.addEventListener("click",()=>{
+        login = false;
+        localStorage.setItem("status",false);
+        loginLink.setAttribute("href","index.html");
+        alert("You have been logged out");
+    })
+}
+
 let display = document.getElementById("phones-container");
 
 let phonesData = JSON.parse(localStorage.getItem("phonesData"));
@@ -35,7 +50,7 @@ function appendData(arr){
             }
 
             if(duplicate === false){
-                cartItems.push(element);
+                cartItems.push({...element,quantity:1});
                 localStorage.setItem("cartItems",JSON.stringify(cartItems));
                 alert("Product added to cart");
             }
