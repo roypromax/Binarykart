@@ -14,4 +14,6 @@ myForm.addEventListener('submit',function(event){
 
     localStorage.setItem("users",JSON.stringify(userArr));
 
+    window.location = "/login.html"
+
 })

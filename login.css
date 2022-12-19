@@ -15,7 +15,10 @@
     text-align: right;
 }
 
-
+#first a{
+    color: white;
+    text-decoration: none;
+}
 
 #first>div{
     display: flex;
@@ -62,12 +65,68 @@
     background-color: #F44336;
 }
 
-#login>input{
-    display: block;
-
+h1{
+    text-align: center;
+    margin: 20px;
 }
+
 
 #login{
     width: 15%;
     margin: auto;
+    padding: 20px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    margin-bottom: 100px;
+
+}
+
+#login>input{
+    display: block;
+    margin: 10px;
+
+}
+
+#login>#button{
+    display: block;
+    margin: auto;
+    padding: 10px;
+    font-weight:bolder;
+    font-size: large;
+    border: none;
+    border-radius: 2px;
+    color:white;
+    background-color: #F44336;
+}
+
+#login>#button:hover{
+    background-color: #303F9F;
+}
+
+
+#footer{
+    background-color: #303F9F;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+}
+
+#footer>div{
+
+    display: flex;
+    flex-direction: column;
+}
+
+#footer h3,#footer a{
+    color: white;
+    text-decoration: none;
+}
+
+#footer>div:last-child{
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+#footer img{
+    width: 25%;
 }

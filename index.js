@@ -1,4 +1,4 @@
-console.log("Hello");
+
 let phonesData = [
     {
         id:1,
@@ -87,3 +87,18 @@ let phonesData = [
 ];
 
 localStorage.setItem("phonesData",JSON.stringify(phonesData));
+
+let loginLink = document.getElementById("loginLink");
+
+let login = JSON.parse(localStorage.getItem("status"));
+
+if(login == true){
+    loginLink.innerText = "Logout";
+
+    loginLink.addEventListener("click",()=>{
+        login = false;
+        localStorage.setItem("status",false);
+        loginLink.setAttribute("href","index.html");
+        alert("You have been logged out");
+    })
+}
